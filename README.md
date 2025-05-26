@@ -43,20 +43,8 @@ You **may not**:
 
 If you'd like to collaborate or showcase this work, please request permission.
 
----
-
-## 📁 Project Structure
-
-├── index.html
-├── main.css
-├── game.js
-└── assets/
-├── images/
-└── sounds/
 
 ---
-
-## 💌 Author
 
 Created with love by **matsiu**  
 All content © 2025 **matsiu**. All rights reserved.
