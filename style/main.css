@@ -760,7 +760,7 @@ level-frame.level-2 {
 	#gameplay.screen .level-frame {
 		position: relative;
 		width: 96%;
-    		height: 60%;
+    		height: 80%;
 		background-color: #EEE6FC;
 		padding: 5px;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -794,7 +794,7 @@ level-frame.level-2 {
 
 	#gameplay.screen .top-bar {
 		width: 100%;
-		padding: 20% 1%;
+		padding: 4% 2%;
 		display: flex;
 		justify-content: space-between;
 		font-size: 0.9em;
@@ -838,8 +838,11 @@ level-frame.level-2 {
 
 	.cat-mask-1-2 {
 		top: 77% !important;
+		
 		left: 20% !important;
+		
 		width: 70px !important;
+		
 		height: 55px !important;
 	}
 
