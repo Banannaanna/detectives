@@ -1,4 +1,4 @@
-# 🕵️‍♀️ Puddy & Annie: Cat Detectives
+# 🕵️‍♀️ Puddy & Annie: Detectives
 
 A mobile-first web game where players help Puddy & Annie find sneaky hidden cats across hand-illustrated scenes.
 
