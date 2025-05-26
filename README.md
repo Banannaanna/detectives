@@ -48,15 +48,10 @@ If you'd like to collaborate or showcase this work, please request permission.
 ## 📁 Project Structure
 
 ├── index.html
-
 ├── main.css
-
 ├── game.js
-
 └── assets/
-
 ├── images/
-
 └── sounds/
 
 ---
