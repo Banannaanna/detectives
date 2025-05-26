@@ -760,7 +760,7 @@ level-frame.level-2 {
 	#gameplay.screen .level-frame {
 		position: relative;
 		width: 96%;
-		aspect-ratio: 3 / 4.2;
+    		height: 60%;
 		background-color: #EEE6FC;
 		padding: 5px;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
