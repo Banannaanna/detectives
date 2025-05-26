@@ -770,6 +770,19 @@ level-frame.level-2 {
 		justify-content: flex-start;
 	}
 
+	  #gameplay.screen .level-frame-2 {
+		position: relative;
+		width: 98%;
+		height: 77%;
+		background-color: #EEE6FC;
+		padding: 5px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
 	#gameplay.screen .level-card {
 		width: 100%;
 		position: relative;
@@ -859,10 +872,10 @@ level-frame.level-2 {
 
 	/* === MASKS-2 Mobile Size === */
 	.cat-mask-2-1 {
-		top: 10% !important;
-		left: 43% !important;
-		width: 40px !important;
-		height: 40px !important;
+		top: 3% !important;
+	        left: 44% !important;
+	        width: 50px !important;
+	        height: 50px !important;
 	}
 
 	.cat-mask-2-2 {
@@ -874,24 +887,24 @@ level-frame.level-2 {
 	}
 
 	.cat-mask-2-3 {
-		top: 39% !important;
+		top: 37% !important;
 		left: 12% !important;
-		width: 24px !important;
-		height: 24px !important;
+		width: 40px !important;
+		height: 40px !important;
 	}
 
 	.cat-mask-2-4 {
-		top: 27% !important;
-		left: 72% !important;
-		width: 30px !important;
-		height: 30px !important;
+		top: 22% !important;
+	        left: 73% !important;
+	        width: 40px !important;
+	        height: 40px !important;
 	}
 
 	.cat-mask-2-5 {
-		top: 18% !important;
-		left: 8% !important;
-		width: 35px !important;
-		height: 42px !important;
+		top: 12% !important;
+	        left: 8% !important;
+	        width: 40px !important;
+	        height: 50px !important;
 	}
 
 	/* === MASKS-3 Mobile Size === */
