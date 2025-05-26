@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puddy & Annie Detectives</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <section id="start-screen" class="screen">
+    <img src="assets/images/start-bg.png" alt="Start Background" class="full-background">
+    <div class="overlay">
+      
+      <img src="assets/images/P&A_logo.png" class="logo-img">
+
+      <button id="start-button">start</button>
+    </div>
+  </section>
+
+<!-- Level 1 Intro Screen -->
+<section id="level-1-intro" class="screen hidden">
+  <div class="level-1-blur">
+    <img src="assets/images/Prv_LVL_1_BG.png" class="background" alt="Level intro">
+  </div>
+
+  <div class="overlay">
+    <img src="assets/images/P&A_logo.png" class="logo-img" alt="Logo" />
+
+    <div class="lvl-texts">
+      <p><strong>LVL: 1</strong></p>
+      
+      <p>
+        It’s a sweet summer evening, Puddy & Annie are
+        heading to the bakery for snacks and chit-chat.
+      </p>
+      
+      <p>
+        But something’s off — someone saw three
+        Bad-Cat Gang members lurking nearby.
+        It’s time for a mission...
+      </p>
+
+      <p class="final-line"><strong>Find 3 Cats!</strong></p>
+    </div>
+
+    <button class="level-button" data-level="1">Search</button>
+  </div>
+</section>
+
+<!-- Level 2 Intro Screen -->
+<section id="level-2-intro" class="screen hidden">
+  <div class="level-2-blur">
+    <img src="assets/images/Prv_LVL_2_BG.png" class="background" alt="Level intro">
+  </div>
+
+  <div class="overlay">
+    <img src="assets/images/P&A_logo.png" class="logo-img" alt="Logo" />
+
+    <div class="lvl-texts">
+      <p><strong>LVL: 2</strong></p>
+      
+      <p>
+        Phew, that was wild… But Puddy & Annie finally sat down<br>
+        to enjoy their well-deserved snacks.  <br>
+      </p>
+      <p>
+        The air was calm. The donut was soft and sweet.
+      <p>
+        THEN IT HAPPENED!!!
+        Puddy’s sandwich was snatched - right from his mouth! A bold, diabolical crime...
+        Now it’s your turn, detective.
+        Find all 5 cats and bring sandwich justice!
+      </p>
+
+      <p class="final-line"><strong>Find 5 Cats!</strong></p>
+    </div>
+
+    <button class="level-button" data-level="2">Catch them!</button>
+  </div>
+</section>
+
+<section id="level-3-intro" class="screen hidden">
+  <div class="level-3-blur">
+    <img src="assets/images/Prv_LVL_3_BG.png" class="background" alt="Level intro">
+  </div>
+  <div class="overlay">
+    <img src="assets/images/P&A_logo.png" class="logo-img" alt="Logo" />
+    <div class="lvl-texts">
+      <p><strong>LVL: 3</strong></p>
+      <p>
+        It’s holiday time!
+        Puddy & Annie are out shopping for the purrfect party but chaos is everywhere!
+        Broken shelves, glitter explosions, snack crumbs in every corner...</p>
+      <p> We all know who’s behind it.
+        The Bad-Cat Gang strikes again.</p>
+
+        Let’s catch them before they destroy the whole building!
+      </p>
+      <p class="final-line"><strong>Find 6 Cats!</strong></p>
+    </div>
+    <button class="level-button" data-level="3">Catch them!</button>
+  </div>
+</section>
+
+  <!-- Gameplay Screen -->
+<section id="gameplay" class="screen hidden">
+  <!-- Фонове блюр-зображення -->
+  <img src="assets/images/Prv_LVL_1_BG.png" class="full-background" alt="Blurred BG">
+  <img src="assets/images/Prv_LVL_2_BG.png" class="full-background" alt="Blurred BG">
+  <img src="assets/images/Prv_LVL_3_BG.png" class="full-background" alt="Blurred BG">
+
+  <!-- UI верхній -->
+  <div id="ui">
+    <div class="top-bar">
+      <span class="level-indicator">LVL: 1</span>
+      <span class="cat-counter">
+        Cats: <span id="found-cats">0</span>/<span id="total-cats">3</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Центральна біла плажка-хуяжка -->
+  <div class="level-frame">
+    <div class="level-card">
+    <!-- Картинки всіх рівнів -->
+      <img src="assets/images/level1.png" class="level-image level-image-lvl-1" />
+      <img src="assets/images/level2.png" class="level-image level-image-lvl-2 hidden" />
+      <img src="assets/images/level3.png" class="level-image level-image-lvl-3 hidden" />
+    </div>
+
+  
+    <!-- Прогресбар після level-card -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+  <!-- маски для рівня 1 -->
+    <div class="cat-masks cat-masks-lvl-1">
+      <div class="cat-mask cat-mask-1-1"></div>
+      <div class="cat-mask cat-mask-1-2"></div>
+      <div class="cat-mask cat-mask-1-3"></div>
+    </div>
+
+    <!-- Для рівня 2 -->
+    <div class="cat-masks cat-masks-lvl-2 hidden">
+      <div class="cat-mask cat-mask-2-1"></div>
+      <div class="cat-mask cat-mask-2-2"></div>
+      <div class="cat-mask cat-mask-2-3"></div>
+      <div class="cat-mask cat-mask-2-4"></div>
+      <div class="cat-mask cat-mask-2-5"></div>
+    </div>
+
+    <!-- Для рівня 3 -->
+    <div class="cat-masks cat-masks-lvl-3 hidden">
+    <div class="cat-mask cat-mask-3-1"></div>
+    <div class="cat-mask cat-mask-3-2"></div>
+    <div class="cat-mask cat-mask-3-3"></div>
+    <div class="cat-mask cat-mask-3-4"></div>
+    <div class="cat-mask cat-mask-3-5"></div>
+    <div class="cat-mask cat-mask-3-6"></div>
+    </div>
+</div>
+
+  </div>
+</section>
+
+ <!-- Level Complete Screen -->
+<section id="level-complete" class="screen hidden">
+  <!-- Фони для кожного рівня -->
+  <img id="level-complete-bg-1" class="level-complete-bg" src="assets/images/Prv_LVL_1_BG.png" />
+  <img id="level-complete-bg-2" class="level-complete-bg hidden" src="assets/images/Prv_LVL_2_BG.png" />
+  <img id="level-complete-bg-3" class="level-complete-bg hidden" src="assets/images/Prv_LVL_3_BG.png" />
+
+  <!-- Коїни для кожного рівня -->
+  <img id="level-complete-coin-1" class="level-complete-coin" src="assets/images/coins_3.png" />
+  <img id="level-complete-coin-2" class="level-complete-coin hidden" src="assets/images/coins_5.png" />
+  <img id="level-complete-coin-3" class="level-complete-coin hidden" src="assets/images/coins_6.png" />
+
+  <!-- overlay з усіма елементами -->
+  <div class="overlay level-complete-overlay">
+
+    <div class="level-complete-texts">
+      <div id="level-complete-text-1" class="level-complete-text">Great job! You found all 3 cats!</div>
+      <div id="level-complete-text-2" class="level-complete-text hidden">Awesome! 5 sneaky cats were caught!</div>
+      <div id="level-complete-text-3" class="level-complete-text hidden">Legendary! Final 6 cats tracked down!</div>
+    </div>
+
+    <div class="level-complete-buttons">
+      <button class="next-level-button green-button hidden" data-level="2">Next Level</button>
+      <button class="next-level-button green-button hidden" data-level="3">Next Level</button>
+      <button class="next-level-button green-button hidden" data-level="gift">Your Gift</button>
+    </div> 
+    
+    </div>
+    </section>
+
+
+<!-- Gift Screen -->
+<section id="gift-screen" class="screen hidden">
+
+  <img src="assets/images/final-gift-bg.png" class="full-background" alt="Gift Background" />
+  <img src="assets/images/Detective-ID.png" class="id-img"/>
+
+  <div class="gift-texts">
+    <h2>Congratulations Detective!</h2>
+  </div>
+
+  <a href="https://sticker.ly/s/CI8UH8" download class="get-button">get stickers</a>
+
+</section>
+
+
+  <script src="js/game.js"></script>
+</body>
+</html>
