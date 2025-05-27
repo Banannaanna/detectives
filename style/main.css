@@ -770,7 +770,7 @@ level-frame.level-2 {
 		justify-content: flex-start;
 	}
 
-	  #gameplay.screen .level-frame-2 {
+	  #gameplay.screen .level-frame.level-2 {
 		position: relative;
 		width: 98%;
 		height: 77%;
@@ -783,7 +783,7 @@ level-frame.level-2 {
 		justify-content: flex-start;
 	}
 
-	 #gameplay.screen .level-frame-3 {
+	 #gameplay.screen .level-frame.level-3 {
 		position: relative;
 		width: 96%;
     		height: 83%;
