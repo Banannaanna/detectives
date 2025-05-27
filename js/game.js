@@ -101,16 +101,15 @@ function updateCompleteScreen(level) {
 }
 
 
-
-
 function startLevel() {
   foundCats = 0;
   const totalCats = catCounts[currentLevel] || 3;
 
-  renderProgressBar(totalCats);
+  document.querySelector('.level-indicator').textContent = `LVL: ${currentLevel + 1}`;
   document.getElementById('found-cats').textContent = foundCats;
   document.getElementById('total-cats').textContent = totalCats;
 
+  renderProgressBar(totalCats);
   showLevelVisuals(currentLevel);
   showLevelMasks(currentLevel);
   bindMaskClicks(totalCats);
