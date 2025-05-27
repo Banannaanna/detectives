@@ -16,7 +16,7 @@ Enjoy the surprise gift at the end 🐾
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 - Custom animation and mask detection logic
 - Fully responsive layout, optimized for mobile
 
