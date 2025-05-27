@@ -669,7 +669,6 @@ level-frame.level-2 {
 
 	#gift-screen.screen .id-img {
 		position: relative;
-		top: -30px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
