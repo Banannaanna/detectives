@@ -689,7 +689,7 @@ level-frame.level-2 {
 		width: 200px;
 		position: absolute;
 		left: 50%;
-		bottom: 15%;
+		bottom: 12%;
 		transform: translateX(-50%);
 		display: inline-flex;
 		justify-content: center;
