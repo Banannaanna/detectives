@@ -847,6 +847,11 @@ level-frame.level-2 {
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
 
+	.get-button:hover {
+	transform: translate(0, -2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 	/* === MASKS-1 Mobile Size === */
 	.cat-mask-1-1 {
 		top: 38% !important;
